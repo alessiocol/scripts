@@ -9,6 +9,10 @@
 #    USER=<homedir username here>
 #    rsync -aP --exclude-from=rsync-homedir-excludes.txt /home/$USER/ /media/$USER/linuxbackup/home/$USER/
 
+mounts/
+# NVidia OpenGL cache
+.nv/GLCache/
+.nv/ComputeCache/
 
 ###############################################
 # directories, probably not worth a backup    #
@@ -45,7 +49,7 @@
 ## Add Game Folders here:
 #
 #/games
-#.local/share/Steam
+.local/share/Steam
 #.steam
 #/Steam
 #.minecraft
@@ -351,6 +355,7 @@ nohup.out
 .config/Code/blob_storage/
 .config/Code/GPUCache/
 .config/Code/logs/
+.config/Code/CachedData
 
 # VirtualBox
 .config/VirtualBox/VBoxSVC.log*
